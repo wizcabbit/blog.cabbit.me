@@ -1,11 +1,16 @@
-auto: true
-
 markdown: rdiscount
-pygments: true
 paginate: 8
 permalink: /:title
 
-title: BeiYuu.com
-url: http://beiyuu.com
+title: Blog @wizcabbit
+url: http://blog.cabbit.me
 feed: /atom.xml
-author_info: <a href="http://beiyuu.com/">BeiYuu</a>
+author_info: <a href="http://blog.cabbit.me/">wizcabbit</a>
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"

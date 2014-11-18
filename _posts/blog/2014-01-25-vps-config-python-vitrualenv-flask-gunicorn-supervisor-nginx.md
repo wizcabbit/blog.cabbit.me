@@ -1,5 +1,4 @@
 ---
-layout: post
 title: VPS环境搭建详解 (Virtualenv+Gunicorn+Supervisor+Nginx)
 description: VPS环境搭建就是去理解各种概念的过程，这篇博客记录了在VPS上搭建Python环境的过程，其中除了Python特性的东西，基本概念是相通的。关键字：Python, Virtualenv, Flask, Gunicorn, Supervisor, Nginx
 category: blog
