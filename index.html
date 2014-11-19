@@ -3,16 +3,11 @@ layout: home
 title: Blog
 ---
 
-<div class="index-content blog">
+<div class="index-content index">
   <div class="section">
     <ul class="artical-cate">
-      <li class="on">
+      <li style="text-align:center" class="on">
         <a href="/">
-          <span>Blog</span>
-        </a>
-      </li>
-      <li style="text-align:center">
-        <a href="/leetcode">
           <span>Leetcode</span>
         </a>
       </li>
@@ -28,7 +23,7 @@ title: Blog
     </div>
 
     <ul class="artical-list">
-      {% for post in site.categories.blog %}
+      {% for post in site.categories.leetcode %}
       <li>
         <h2><a href="{{ post.url }}">{{ post.title }}</a>
         </h2>
