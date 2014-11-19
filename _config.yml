@@ -2,7 +2,7 @@ markdown: rdiscount
 paginate: 8
 permalink: /:title
 
-title: Blog @wizcabbit
+title: "@wizcabbit"
 url: http://blog.cabbit.me
 feed: /atom.xml
 author_info: <a href="http://blog.cabbit.me/">wizcabbit</a>
@@ -10,7 +10,8 @@ author_info: <a href="http://blog.cabbit.me/">wizcabbit</a>
 defaults:
   -
     scope:
-      path: "" # an empty string here means all files in the project
+      path: "leetcode"
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post"
+      categories: "leetcode"
