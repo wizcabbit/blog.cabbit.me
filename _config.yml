@@ -3,15 +3,15 @@ paginate: 8
 permalink: /:title
 
 title: "@wizcabbit"
-url: http://blog.cabbit.me
-feed: /atom.xml
+# url: http://blog.cabbit.me
+url: http://localhost:9007
 author_info: <a href="http://blog.cabbit.me/">wizcabbit</a>
 
 defaults:
   -
     scope:
       path: "leetcode"
-      type: "posts" # previously `post` in Jekyll 2.2.
+      type: "posts"
     values:
       layout: "post"
       categories: "leetcode"

@@ -1,0 +1,33 @@
+.post-brief {
+  border-bottom: solid #dededc 1px;
+}
+.post-brief a h2, .post-full-link {
+  color: #007998;
+  text-decoration: none;
+  -moz-transition: color 0.25s ease-in-out;
+  -ms-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  -webkit-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+}
+.post-brief a:hover h2, .post-full-link:hover {
+  color: rgba(0, 121, 152, 0.5);
+}
+.post-brief h3 {
+  font-size: 18px;
+  color: #999;
+  line-height: 2em;
+  font-weight: normal;
+}
+.post-more {
+  overflow: auto;
+  padding-bottom: 5px;
+}
+.post-more .post-date {
+  float: right;
+  color: #b3b3b1;
+  margin-right: 20px;
+}
+.post-more .post-full-link {
+  float: right;
+}

@@ -1,6 +1,6 @@
 ---
 title: Leetcode 笔记 98 - Validate Binary Search Tree
-description: 验证二叉搜索树 | 深度优先搜索
+description: 对于Binary Search Tree，每道题都需要认真确认题中的约定是否与自己的理解相符，比如大名鼎鼎的Cracking the Coding Interview中，对于二叉查找树的定义为“左子结点小于或等于当前结点”，本题中的描述为”左子结点小于当前结点“。
 name: Validate Binary Search Tree
 ---
 

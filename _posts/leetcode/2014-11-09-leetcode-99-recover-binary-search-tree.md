@@ -1,6 +1,6 @@
 ---
 title: Leetcode 笔记 99 - Recover Binary Search Tree
-description: 恢复二叉搜索树 | 深度优先搜索
+description: 基本要求是使用O(n)的空间，进阶要求是使用常数空间。O(n)的算法比较直接，直接从二叉查找树的用途就能推出。二叉查找树的特点是中序遍历后能够生成递增的序列，因此只需要对给定的二叉查找树进行中序遍历，遍历过程中找到非递增情况，就能够得出不符合递增规律的两个数，交换后二叉查找树的恢复就完成了。
 name: Recover Binary Search Tree
 ---
 

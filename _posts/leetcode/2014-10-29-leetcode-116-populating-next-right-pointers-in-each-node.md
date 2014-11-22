@@ -1,6 +1,6 @@
 ---
 title: Leetcode 笔记 116 - Populating Next Right Pointers in Each Node
-description: 深度优先搜索
+description: 是Populating Next Right Pointers in Each Node II的简化版本，主要简化在于给定的树是完整树，因此Populating Next Right Pointers in Each Node II的解法也完全适用于本题。
 name: Populating Next Right Pointers in Each Node
 ---
 

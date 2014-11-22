@@ -1,62 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 
 <head>
-  <meta charset="utf-8" />
   <title>{% if page.title %}{{ page.title }} {% endif %}{{ site.title }}</title>
-  <meta name="author" content="wizcabbit" />
+  <meta charset="utf-8" />
+  <meta name="author" content="wizcabbit">
+  <meta name="keywords" content="wizcabbit,Wang Zhi Yong,blog,{% if page.keywords %}{{ page.keywords }} {% endif %}">
+  <meta name="description" content="wizcabbit (WANG Zhi Yong)'s blog.">
   <meta name="renderer" content="webkit">
-  <meta name="description" content="Blog @wizcabbit" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="/css/default.css" type="text/css" />
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
-  <script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+  <meta name="description" content="Blog @wizcabbit">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="{{ site.url }}/css/common.css">
+  <link rel="stylesheet" href="{{ site.url }}/css/index.css">
+  <link rel="stylesheet" href="{{ site.url }}/lib/Han/han.min.css">
+  <script type="text/javascript" src="{{ site.url }}/lib/Han/han.min.js"></script>
 </head>
 
 <body>
-  <div class="home-menu">
-    <div class="home-icon-con">
-      <a class="home-menu-icon" href="/">Blog @wizcabbit</a>
-      <a class="home-follow" href="#" title="Contact Me">+</a>
-    </div>
-    <!--<div class="home-links">
-      <a class="home-menu-icon" href="/">> My Portfolio</a>
-    </div>
-    <div class="home-links">
-      <a class="home-menu-icon" href="/">> My Resume</a>
-    </div>-->
-    <div class="home-contact">
-      <a href="http://weibo.com/p/1005051854892553" target="_blank" style="margin-left:-5px;">
-        <img src="http://www.weibo.com/favicon.ico" alt="" width="25" />
-      </a>
-      <a href="http://www.douban.com/people/JefferyWang/" target="_blank" style="text-align:center;">
-        <img src="http://www.douban.com/favicon.ico" alt="" width="22" />
-      </a>
-      <a href="http://www.zhihu.com/people/wizcabbit" target="_blank" style="text-align:right">
-        <img src="http://static.zhihu.com/static/favicon.ico" alt="" width="22" />
-      </a>
-      <a href="https://github.com/wizcabbit" target="_blank" style="text-align:right">
-        <img src="https://assets-cdn.github.com/favicon.ico" alt="" width="22" />
-      </a>
-    </div>
+  <div id="header-wrapper">
+    <header id="header">
+      <div id="logo">
+        <a href="{{ site.url }}">
+          <img src="{{ site.url }}/images/logo_80.jpg" width="64" height="64" alt="wizcabbit">
+        </a>
+      </div>
+      <h1>
+        <a href="{{ site.url }}">wizcabbit</a>
+      </h1>
+      <p id="description">全栈码农（Web）、伪咨询顾问</p>
+      <p class="site-links">
+        [<a href="//cabbit.me">Portfolio</a>,
+        <a href="//cabbit.me/resume">Resume</a>]
+      </p>
+      <ul class="category-links" style="display:none;">
+        <li><a href="{{ site.url }}/leetcode">leetcode</a>
+        </li>
+      </ul>
+    </header>
+    <ul class="social-links">
+      <li><a href="https://github.com/wizcabbit" target="_blank">GitHub</a>
+      </li>
+      <li><a href="//zhihu.com/people/wizcabbit" target="_blank">知乎</a>
+      </li>
+      <li><a href="//www.douban.com/people/JefferyWang/" target="_blank">豆瓣</a>
+      </li>
+    </ul>
   </div>
-
-  {{ content }}
-
-  <script type="text/javascript">
-  $(function() {
-    $('.home-follow').click(function(e) {
-      e.preventDefault();
-
-      if ($('.home-contact').is(':visible')) {
-        $('.home-contact').slideUp(100);
-      } else {
-        $('.home-contact').slideDown(100);
-      }
-    });
-  })
-  </script>
+  <div id="main-wrapper">
+    {{ content }}
+  </div>
 </body>
 
 </html>
