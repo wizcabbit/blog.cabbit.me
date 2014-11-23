@@ -31,3 +31,9 @@
 .post-more .post-full-link {
   float: right;
 }
+@media screen and (max-width: 400px) {
+  .post-brief h2 {
+    line-height: 1.4em;
+    font-size: 1.4em;
+  }
+}

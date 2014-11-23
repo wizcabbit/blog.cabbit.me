@@ -111,3 +111,31 @@ ul {
   font-weight: 900;
   src: local('Roboto Black'), local('Roboto-Black'), url(../fonts/Roboto_900.woff) format('woff');
 }
+@media screen and (max-width: 800px) {
+  #header-wrapper {
+    position: static;
+    overflow: auto;
+    width: auto;
+    padding: 5% 0;
+  }
+  #header {
+    position: static;
+  }
+  .social-links {
+    position: static;
+  }
+  #main-wrapper {
+    margin: 0;
+  }
+  #main {
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #header h1 {
+    margin: 0;
+  }
+  #header p {
+    margin: 0.8em 0;
+  }
+}
