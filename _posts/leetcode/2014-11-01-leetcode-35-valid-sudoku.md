@@ -4,8 +4,6 @@ description: 最简单直接的解法一般是遍历整张数独表格，遇到�
 name: Valid Soduko
 ---
 
-## 题目
-
 题目链接：[Valid Sudoku | LeetCode OJ](https://oj.leetcode.com/problems/valid-sudoku/)
 
 Determine if a Sudoku is valid, according to:  [Sudoku Puzzles - The Rules](http://sudoku.com.au/TheRules.aspx).

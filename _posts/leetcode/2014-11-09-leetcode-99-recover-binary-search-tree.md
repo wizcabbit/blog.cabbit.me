@@ -4,7 +4,6 @@ description: 基本要求是使用O(n)的空间，进阶要求是使用常数空
 name: Recover Binary Search Tree
 ---
 
-## 题目
 
 题目链接：[Recover Binary Search Tree | LeetCode OJ](https://oj.leetcode.com/problems/recover-binary-search-tree/)
 

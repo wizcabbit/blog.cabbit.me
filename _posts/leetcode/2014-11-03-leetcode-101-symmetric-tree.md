@@ -4,8 +4,6 @@ description: 判断一个二叉树是否是镜像的条件是根节点的左右�
 name: Symmetric Tree
 ---
 
-## 题目
-
 题目链接：[Symmetric Tree | LeetCode OJ](https://oj.leetcode.com/problems/symmetric-tree/)
 
 Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).

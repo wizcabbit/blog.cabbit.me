@@ -4,8 +4,6 @@ description: 深度优先遍历的题，唯一需要注意的是leetcode约定�
 name: Same Tree
 ---
 
-## 题目
-
 题目链接：[Same Tree | LeetCode OJ](https://oj.leetcode.com/problems/same-tree/)
 
 Given two binary trees, write a function to check if they are equal or not.

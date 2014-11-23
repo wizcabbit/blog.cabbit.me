@@ -4,8 +4,6 @@ description: 本题的一个难点在于要求使用常数空间，这样的话�
 name: Populating Next Right Pointers in Each Node II
 ---
 
-## 题目
-
 题目链接：[Populating Next Right Pointers in Each Node II | LeetCode OJ](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
 
 Follow up for problem "Populating Next Right Pointers in Each Node".

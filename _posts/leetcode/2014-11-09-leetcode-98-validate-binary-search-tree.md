@@ -4,8 +4,6 @@ description: 对于Binary Search Tree，每道题都需要认真确认题中的�
 name: Validate Binary Search Tree
 ---
 
-## 题目
-
 题目链接：[Validate Binary Search Tree | LeetCode OJ](https://oj.leetcode.com/problems/validate-binary-search-tree/)
 
 Given a binary tree, determine if it is a valid binary search tree (BST).

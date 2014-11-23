@@ -1,0 +1,30 @@
+.post-title {
+  font-size: 2.0em;
+  margin-top: 5px;
+  line-height: 1.6em;
+  padding-bottom: 0.4em;
+}
+.post-subtitle {
+  font-size: 1.4em;
+  color: #999;
+  line-height: 2em;
+  font-weight: normal;
+}
+.post-date {
+  color: #b3b3b1;
+}
+.post a{
+  color: #007998;
+  text-decoration: none;
+  -moz-transition: color 0.25s ease-in-out;
+  -ms-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  -webkit-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+}
+.post a:hover {
+  color: rgba(0, 121, 152, 0.5);
+}
+.post ul {
+  list-style: disc;
+}

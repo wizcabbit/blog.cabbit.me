@@ -4,8 +4,6 @@ description: 深度优先遍历题目，只要在遍历时取得左右子树的�
 name: Balanced Binary Tree
 ---
 
-## 题目
-
 题目链接：[Balanced Binary Tree | LeetCode OJ](https://oj.leetcode.com/problems/balanced-binary-tree/)
 
 Given a binary tree, determine if it is height-balanced.

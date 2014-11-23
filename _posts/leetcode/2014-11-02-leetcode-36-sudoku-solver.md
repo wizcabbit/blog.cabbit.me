@@ -4,8 +4,6 @@ description: 写程序解数独的基本解法与人类解数独的方法基本�
 name: Sudoku Solver
 ---
 
-## 题目
-
 题目链接：[Sudoku Solver | LeetCode OJ](https://oj.leetcode.com/problems/sudoku-solver/)
 
 Write a program to solve a Sudoku puzzle by filling the empty cells.

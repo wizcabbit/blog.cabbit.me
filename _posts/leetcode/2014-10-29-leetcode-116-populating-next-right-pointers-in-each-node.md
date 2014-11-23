@@ -4,8 +4,6 @@ description: 是Populating Next Right Pointers in Each Node II的简化版本，
 name: Populating Next Right Pointers in Each Node
 ---
 
-## 题目
-
 题目链接：[Populating Next Right Pointers in Each Node | LeetCode OJ](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node/)
 
 Given a binary tree
