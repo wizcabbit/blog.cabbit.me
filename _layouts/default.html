@@ -11,6 +11,7 @@
   <meta name="description" content="Blog @wizcabbit">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="shortcut icon" href="/favicon.ico" />
+{% if site.is_debug %}
   <link rel="stylesheet" href="{{ site.url }}/css/common.css">
   <link rel="stylesheet" href="{{ site.url }}/css/index.css">
   <link rel="stylesheet" href="{{ site.url }}/css/post.css">
@@ -18,6 +19,10 @@
   <link rel="stylesheet" href="{{ site.url }}/lib/prism/prism.css">
   <script type="text/javascript" src="{{ site.url }}/lib/jquery/jquery.min.js"></script>
   <script type="text/javascript" src="{{ site.url }}/lib/Han/han.min.js"></script>
+{% else %}
+  <link rel="stylesheet" href="{{ site.url }}/all.min.css">
+  <script type="text/javascript" src="{{ site.url }}/all.min.js"></script>
+{% endif %}
 </head>
 
 <body>

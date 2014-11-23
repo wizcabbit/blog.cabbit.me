@@ -6,9 +6,15 @@ layout: default
   <article class="post">
     <span class="post-date">{{ page.date | date: "%Y-%m-%d" }}</span>
     <h2 class="post-title">{{ page.title }}</h2>
-    {% if post.subtitle %}<h3 class="post-subtitle">{{ post.subtitle }}</h3>{% endif %}
-    {{ content }}
+    {% if post.subtitle %}
+    <h3 class="post-subtitle">{{ post.subtitle }}</h3>{% endif %} {{ content }}
   </article>
 </div>
-<script type="text/javascript" src="{{ site.url }}/js/default.js"></script>
+<script type="text/javascript">
+(function() {
+  $(".python").each(function() {
+    $(this).attr("class", "language-python");
+  });
+})();
+</script>
 <script type="text/javascript" src="{{ site.url }}/lib/prism/prism.js"></script>

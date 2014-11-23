@@ -1,10 +1,12 @@
 markdown: rdiscount
-paginate: 8
 permalink: /:title
 
 title: "@wizcabbit"
+
 # url: http://blog.cabbit.me
 url: http://localhost:9007
+is_debug: true
+
 author_info: <a href="http://blog.cabbit.me/">wizcabbit</a>
 
 defaults:
@@ -15,3 +17,5 @@ defaults:
     values:
       layout: "post"
       categories: "leetcode"
+
+exclude: ["node_modules", "package.json", "Gruntfile.js", ".gitignore"]
