@@ -12,7 +12,7 @@ The Sudoku board could be partially filled, where empty cells are filled with th
 
 ![Soduko Sample](http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png)
 
-*A partially filled sudoku which is valid.*
+A partially filled sudoku which is valid.
 
 **Note:**
 A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.
@@ -92,8 +92,8 @@ class Solution:
 ```
 ## 常见问题
 
-+ 空格子使用 **“.”** 表示，因此题目的输入项和处理格子时，均为字符串，这是在对格子的值进行处理时，如果不进行类型转换会出现低级错误，如：<code>cell = int(board[i][j]) - 1</code>
-+ 在遍历每个格子时，对应的粗线宫索引为：<code>groupMatrix[(i // 3) * 3 + j //3][cell]</code>
++ 空格子使用 **“.”** 表示，因此题目的输入项和处理格子时，均为字符串，这是在对格子的值进行处理时，如果不进行类型转换会出现低级错误，如：<code class="python">cell = int(board[i][j]) - 1</code>
++ 在遍历每个格子时，对应的粗线宫索引为：<code class="python">groupMatrix[(i // 3) * 3 + j //3][cell]</code>
 
 ## 相关题目
 

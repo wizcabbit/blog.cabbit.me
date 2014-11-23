@@ -1,14 +1,14 @@
 .post-title {
-  font-size: 2.0em;
-  margin-top: 5px;
+  font-size: 2em;
   line-height: 1.6em;
+  margin-top: 5px;
   padding-bottom: 0.4em;
 }
 .post-subtitle {
-  font-size: 1.4em;
   color: #999;
-  line-height: 2em;
+  font-size: 1.4em;
   font-weight: normal;
+  line-height: 2em;
 }
 .post-date {
   color: #b3b3b1;
@@ -27,4 +27,12 @@
 }
 .post ul {
   list-style: disc;
+}
+/* Modify prism's default code style */
+.post pre[class*='language-'] > code[data-language] {
+  max-height: initial;
+  line-height: 1.3em;
+}
+.post pre code .comment {
+  font-size: .9em;
 }
