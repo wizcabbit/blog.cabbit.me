@@ -1,7 +1,7 @@
 ---
 title: Leetcode 笔记 101 - Symmetric Tree
 description: 判断一个二叉树是否是镜像的条件是根节点的左右子树互为镜像，左右子树互为镜像的条件是左右子结点的内侧、外侧两个子树互为镜像，这本质上是一个递归问题。
-name: Symmetric Tree
+keywords: Symmetric Tree
 ---
 
 题目链接：[Symmetric Tree | LeetCode OJ](https://oj.leetcode.com/problems/symmetric-tree/)

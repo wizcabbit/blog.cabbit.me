@@ -2,45 +2,68 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     clean: {
-      build: [
+      release: [
         '_site/*'
       ]
     },
     uglify: {
-      js: {
+      release: {
         files: {
-          src: [
+          '_site/all.min.js': [
             'lib/jquery/jquery.min.js',
             'lib/Han/han.min.js'
-          ],
-          dest: '_site/all.min.js'
+          ]
         }
       }
     },
     cssmin: {
-      css: {
+      release: {
         files: {
-          src: [
+          '_site/all.min.css': [
             'css/common.css',
             'css/index.css',
             'css/post.css',
             'lib/Han/han.min.css',
             'lib/prism/prism.css'
-          ],
-          dest: '_site/all.min.css'
+          ]
         }
       }
     },
     jekyll: {
-      dest: "./_site"
+      test: {
+        options: {
+          dest: "./_site",
+          config: "./_config.yml"
+        }
+      },
+      release: {
+        options: {
+          dest: "./_site",
+          config: "./_config_release.yml"
+        }
+      }
+    },
+    ftpush: {
+      deploy: {
+        auth: {
+          host: 'srv.cabbit.me',
+          port: 21,
+          authKey: 'www'
+        },
+        src: './_site',
+        dest: './blog'
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-jekyll');
+  grunt.loadNpmTasks('grunt-ftpush');
 
-  grunt.registerTask('default', ['clean', 'jekyll', 'uglify', 'cssmin']);
+  grunt.registerTask('default', ['jekyll:test']);
+  grunt.registerTask('test', ['jekyll:test']);
+  grunt.registerTask('release', ['clean:release', 'jekyll:release', 'uglify:release', 'cssmin:release']);
+  grunt.registerTask('deploy', ['clean:release', 'jekyll:release', 'uglify:release', 'cssmin:release', 'ftpush:deploy']);
 };

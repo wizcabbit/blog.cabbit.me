@@ -1,7 +1,7 @@
 ---
 title: Leetcode 笔记 36 - Sudoku Solver
 description: 写程序解数独的基本解法与人类解数独的方法基本相同，都是采用回溯法逐一试探推进。数独初始表格给出后，剩余的空格所有可能的值全排列的结果即为解空间，在解空间中，对每个空格填入一个值进行试探，如果试探后数独表格合法，则这个值被暂时采纳，对下一个格子进行试探。
-name: Sudoku Solver
+keywords: Sudoku Solver
 ---
 
 题目链接：[Sudoku Solver | LeetCode OJ](https://oj.leetcode.com/problems/sudoku-solver/)

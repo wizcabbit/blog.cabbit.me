@@ -3,8 +3,8 @@ permalink: /:title
 
 title: "@wizcabbit"
 
-url: http://localhost:9007
-is_debug: true
+url: http://blog.cabbit.me
+is_debug: false
 
 author_info: <a href="http://blog.cabbit.me/">wizcabbit</a>
 
@@ -17,4 +17,4 @@ defaults:
       layout: "post"
       categories: "leetcode"
 
-exclude: ["node_modules",  "package.json", "Gruntfile.js", ".gitignore", "README.md"]
+exclude: ["node_modules", "css", "js", "package.json", "Gruntfile.js", ".gitignore", "README.md"]

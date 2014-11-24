@@ -1,7 +1,7 @@
 ---
 title: Leetcode 笔记 113 - Path Sum II
 description: 深度优先遍历题目，拿到题后首先需要确认几个题中没有明确给出的要点：root-to-leaf 路径，必须是从根结点一直到叶子结点，中间取一段是不行的；结点值可以为负；空的二叉树，不能认为存在和为0的路径
-name: Path Sum II
+keywords: Path Sum II
 ---
 
 题目链接：[Path Sum II | LeetCode OJ](https://oj.leetcode.com/problems/path-sum-ii/)

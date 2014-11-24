@@ -1,7 +1,7 @@
 ---
 title: Leetcode 笔记 100 - Same Tree
 description: 深度优先遍历的题，唯一需要注意的是leetcode约定的对结点为空的两个约定：1. left, right指向None表示没有叶子结点；2. root不为None时（即结点存在），root.val不为None
-name: Same Tree
+keywords: Same Tree
 ---
 
 题目链接：[Same Tree | LeetCode OJ](https://oj.leetcode.com/problems/same-tree/)
