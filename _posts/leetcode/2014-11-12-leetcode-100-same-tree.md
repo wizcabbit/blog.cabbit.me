@@ -19,7 +19,7 @@ Two binary trees are considered equal if they are structurally identical and the
 + left, right指向None表示没有叶子结点
 + root不为None时（即结点存在），root.val不为None
 
-## 示例（Python）
+## 示例
 
 ```python
 class Solution:
@@ -33,6 +33,8 @@ class Solution:
         return False
       return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 ```
+
+Leetcode 笔记系列的Python代码共享在[https://github.com/wizcabbit/leetcode.solution](https://github.com/wizcabbit/leetcode.solution)
 
 ## 优化/简化
 

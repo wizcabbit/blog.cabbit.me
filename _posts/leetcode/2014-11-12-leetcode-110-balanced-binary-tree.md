@@ -18,7 +18,7 @@ For this problem, a height-balanced binary tree is defined as a binary tree in w
 
 有可能出现的问题是先写一个Helper方法获得结点到最下层叶子结点的深度，然后在深度优先遍历中每次调用这个方法来对比深度。这是不必要的，获取深度本身就是用深度优先遍历实现的，一边遍历一边计算深度就OK。
 
-## 示例（Python）
+## 示例
 
 ```python
 class Solution:
@@ -47,6 +47,8 @@ class Solution:
       return -1
     return max(leftHeight, rightHeight) + 1
 ```
+
+Leetcode 笔记系列的Python代码共享在[https://github.com/wizcabbit/leetcode.solution](https://github.com/wizcabbit/leetcode.solution)
 
 ## 扩展
 

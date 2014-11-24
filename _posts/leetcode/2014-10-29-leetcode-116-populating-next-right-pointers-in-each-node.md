@@ -53,7 +53,7 @@ After calling your function, the tree should look like:
 + 将左节点的next指针指向右结点
 + 将右结点的next指针指向下一结点，即当前结点的next结点的左结点。如果右侧没有结点了，则置为None
 
-## 示例（Python）
+## 示例
 
 ```python
 class Solution:
@@ -79,6 +79,9 @@ class Solution:
       else:
         self._connect(root.right, None);
 ```
+
+Leetcode 笔记系列的Python代码共享在[https://github.com/wizcabbit/leetcode.solution](https://github.com/wizcabbit/leetcode.solution)
+
 ## 相关题目
 
 [Populating Next Right Pointers in Each Node II]({% post_url /leetcode/2014-10-30-leetcode-117-populating-next-right-pointers-in-each-node-ii %})

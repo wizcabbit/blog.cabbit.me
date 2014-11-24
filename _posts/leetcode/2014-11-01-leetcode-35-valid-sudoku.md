@@ -40,7 +40,7 @@ A valid Sudoku board (partially filled) is not necessarily solvable. Only the fi
 
 这样遍历整张数独表格时，先检查在3个矩阵中该格子内的数字在对应哈希表中是否出现过，如果出现过，则数独不合法。遍历过的数字在对应矩阵中标为True
 
-## 示例（Python）
+## 示例
 
 ```python
 # 数独表格宽度
@@ -90,10 +90,13 @@ class Solution:
         result[i].append(False)
     return result
 ```
+
+Leetcode 笔记系列的Python代码共享在[https://github.com/wizcabbit/leetcode.solution](https://github.com/wizcabbit/leetcode.solution)
+
 ## 常见问题
 
-+ 空格子使用 **“.”** 表示，因此题目的输入项和处理格子时，均为字符串，这是在对格子的值进行处理时，如果不进行类型转换会出现低级错误，如：<code class="python">cell = int(board[i][j]) - 1</code>
-+ 在遍历每个格子时，对应的粗线宫索引为：<code class="python">groupMatrix[(i // 3) * 3 + j //3][cell]</code>
++ 空格子使用 **“.”** 表示，因此题目的输入项和处理格子时，均为字符串，这是在对格子的值进行处理时，如果不进行类型转换会出现低级错误，如：<code>cell = int(board[i][j]) - 1</code>
++ 在遍历每个格子时，对应的粗线宫索引为：<code>groupMatrix[(i // 3) * 3 + j //3][cell]</code>
 
 ## 相关题目
 

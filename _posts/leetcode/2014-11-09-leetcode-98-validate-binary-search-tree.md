@@ -26,7 +26,7 @@ Assume a BST is defined as follows:
 + 右子树中的结点均大于当前结点
 + 左子树和右子树本身也必须是二叉查找树（意味着左子树的所有子结点均不能大于当前结点，右子树的所有子结点均不能小于当前结点）
 
-## 示例（Python）
+## 示例
 
 ```python
 class Solution:
@@ -44,6 +44,9 @@ class Solution:
 
     return self._isValidBST(root.left, min, root.val) and self._isValidBST(root.right, root.val, max)
 ```
+
+Leetcode 笔记系列的Python代码共享在[https://github.com/wizcabbit/leetcode.solution](https://github.com/wizcabbit/leetcode.solution)
+
 ## 示例说明
 
 + 示例中初始节点的最大、最小值传入了None，理论上应该传入int类型的最小、最大值，但由于python中传入int的极值需要import sys，或者使用硬编码的(-2147483647, 2147483647)。我不喜欢在算法题中引入系统库或者硬编码数字，因此使用了None来代表极值；

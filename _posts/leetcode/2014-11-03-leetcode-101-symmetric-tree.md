@@ -38,7 +38,7 @@ Bonus points if you could solve it both recursively and iteratively.
 
 由于算法本身是递归的，因此只需要加入一个栈，每次把对称位置的结点压入栈内就可以改写成迭代的
 
-## 示例（Python）
+## 示例
 
 ```python
 # Recursively Solution
@@ -73,7 +73,7 @@ class Solution:
     stack = [[root.left, root.right]]
 
     while len(stack) > 0:
-      pair = stack.pop(0)
+      pair = stack.pop()
       left = pair[0]
       right = pair[1]
 
@@ -82,12 +82,14 @@ class Solution:
       if left is None or right is None:
         return False
       if left.val == right.val:
-        stack.insert(0, [left.left, right.right])
-        stack.insert(0, [left.right, right.left])
+        stack.append([left.left, right.right])
+        stack.append([left.right, right.left])
       else:
         return False
     return True
 ```
+
+Leetcode 笔记系列的Python代码共享在[https://github.com/wizcabbit/leetcode.solution](https://github.com/wizcabbit/leetcode.solution)
 
 ## 优化/扩展
 

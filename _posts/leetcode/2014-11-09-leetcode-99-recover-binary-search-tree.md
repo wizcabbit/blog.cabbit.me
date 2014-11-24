@@ -23,7 +23,7 @@ Recover the tree without changing its structure.
 
 真正O(n)空间复杂度的算法需要用时间换空间，常用的算法是Morris二叉树遍历算法。
 
-## 示例（Python）
+## 示例
 
 ```python
 class Solution:
@@ -55,6 +55,9 @@ class Solution:
     self._previous = root
     self._coverTree(root.right)
 ```
+
+Leetcode 笔记系列的Python代码共享在[https://github.com/wizcabbit/leetcode.solution](https://github.com/wizcabbit/leetcode.solution)
+
 ## 示例说明
 
 + 使用中序遍历时，最直接的想法是中序遍历，同时将遍历结果储存在一个数组中。中序遍历结束后，再行遍历这个数组查找非递增的值。其实还可以在中序遍历过程中每次传入上一个结点的值，一边遍历一边比对是否递增。当然这种方法的实际空间复杂度没有变化，因为递归过程中的每次中间结果都会被压栈，实际仍然使用了和单独数组同样的空间

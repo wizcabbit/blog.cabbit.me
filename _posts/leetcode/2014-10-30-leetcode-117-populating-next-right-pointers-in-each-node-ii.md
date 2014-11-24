@@ -46,7 +46,7 @@ After calling your function, the tree should look like:
 + 下一次循环的当前结点设定为父节点的next的孩子
 
 
-## 示例（Python）
+## 示例
 
 ```python
 class Solution:
@@ -79,6 +79,8 @@ class Solution:
       head = None;
       previous = None;
 ```
+
+Leetcode 笔记系列的Python代码共享在[https://github.com/wizcabbit/leetcode.solution](https://github.com/wizcabbit/leetcode.solution)
 
 ## 相关题目
 

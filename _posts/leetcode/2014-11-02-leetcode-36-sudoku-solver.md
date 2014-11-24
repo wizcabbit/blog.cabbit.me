@@ -28,7 +28,7 @@ A sudoku puzzle...
 
 如果出现所有可能的值都被试探过，而表格仍然不合法，则这个数独无解。
 
-## 示例（Python）
+## 示例
 
 ```python
 width = 9
@@ -61,6 +61,9 @@ class Solution:
           return False
     return True
 ```
+
+Leetcode 笔记系列的Python代码共享在[https://github.com/wizcabbit/leetcode.solution](https://github.com/wizcabbit/leetcode.solution)
+
 ## 常见问题
 
 + 在回溯试探的过程中，可以看到判断数独当前状态是否合法是非常重要的环节，我第一反应也是“复用”相关题目[Valid Sudoku]({% post_url /leetcode/2014-11-01-leetcode-35-valid-sudoku %})中的验证方法，但是很快发现会产生严重的算法超时问题。这是因为在这里“暴力”的求解方法中，isValidSudoku函数被调用的次数过大，我随便找了一个数独进行测试，isValidSudoku的执行次数高达21万多次，因此[Valid Sudoku]({% post_url /leetcode/2014-11-01-leetcode-35-valid-sudoku %})中的方法显然需要优化。

@@ -9,23 +9,25 @@ module.exports = function(grunt) {
     uglify: {
       js: {
         files: {
-          '_site/all.min.js': [
+          src: [
             'lib/jquery/jquery.min.js',
             'lib/Han/han.min.js'
-          ]
+          ],
+          dest: '_site/all.min.js'
         }
       }
     },
     cssmin: {
       css: {
         files: {
-          '_site/all.min.css': [
+          src: [
             'css/common.css',
             'css/index.css',
             'css/post.css',
             'lib/Han/han.min.css',
             'lib/prism/prism.css'
-          ]
+          ],
+          dest: '_site/all.min.css'
         }
       }
     },
