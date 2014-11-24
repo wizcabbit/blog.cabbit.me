@@ -84,32 +84,32 @@ ul {
 @font-face {
   font-family: 'Roboto';
   font-weight: 100;
-  src: local('Roboto Thin'), local('Roboto-Thin'), url(../fonts/Roboto_100.woff) format('woff');
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(../font/Roboto_100.woff) format('woff');
 }
 @font-face {
   font-family: 'Roboto';
   font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(../fonts/Roboto_300.woff) format('woff');
+  src: local('Roboto Light'), local('Roboto-Light'), url(../font/Roboto_300.woff) format('woff');
 }
 @font-face {
   font-family: 'Roboto';
   font-weight: 400;
-  src: local('Roboto Regular'), local('Roboto-Regular'), url(../fonts/Roboto_400.woff) format('woff');
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(../font/Roboto_400.woff) format('woff');
 }
 @font-face {
   font-family: 'Roboto';
   font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(../fonts/Roboto_500.woff) format('woff');
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(../font/Roboto_500.woff) format('woff');
 }
 @font-face {
   font-family: 'Roboto';
   font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(../fonts/Roboto_700.woff) format('woff');
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(../font/Roboto_700.woff) format('woff');
 }
 @font-face {
   font-family: 'Roboto';
   font-weight: 900;
-  src: local('Roboto Black'), local('Roboto-Black'), url(../fonts/Roboto_900.woff) format('woff');
+  src: local('Roboto Black'), local('Roboto-Black'), url(../font/Roboto_900.woff) format('woff');
 }
 @media screen and (max-width: 800px) {
   #header-wrapper {

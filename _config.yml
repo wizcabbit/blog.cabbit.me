@@ -3,7 +3,7 @@ permalink: /:title
 
 title: "@wizcabbit"
 
-# url: http://blog.cabbit.me
+#url: http://blog.cabbit.me
 url: http://localhost:9007
 is_debug: true
 
@@ -18,4 +18,4 @@ defaults:
       layout: "post"
       categories: "leetcode"
 
-exclude: ["node_modules", "package.json", "Gruntfile.js", ".gitignore"]
+exclude: ["node_modules",  "package.json", "Gruntfile.js", ".gitignore"]
