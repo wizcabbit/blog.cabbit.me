@@ -32,13 +32,11 @@ module.exports = function(grunt) {
     jekyll: {
       test: {
         options: {
-          dest: "./_site",
           config: "./_config.yml"
         }
       },
       release: {
         options: {
-          dest: "./_site",
           config: "./_config_release.yml"
         }
       }
@@ -65,5 +63,5 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['jekyll:test']);
   grunt.registerTask('test', ['jekyll:test']);
   grunt.registerTask('release', ['clean:release', 'jekyll:release', 'uglify:release', 'cssmin:release']);
-  grunt.registerTask('deploy', ['clean:release', 'jekyll:release', 'uglify:release', 'cssmin:release', 'ftpush:deploy']);
+  grunt.registerTask('deploy', ['release', 'ftpush:deploy']);
 };
