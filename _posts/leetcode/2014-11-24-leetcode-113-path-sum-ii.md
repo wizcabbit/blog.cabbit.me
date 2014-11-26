@@ -2,6 +2,7 @@
 title: Leetcode 笔记 113 - Path Sum II
 description: 深度优先遍历题目，在Path Sum的基础上需要可行的解全部列出来。这里会用到有些动态规划的题目中也会用到的技巧，每次深度优先遍历时，都逐级传递从根结点到当前结点的路径
 keywords: Path Sum II
+categories: leetcode tree
 ---
 
 题目链接：[Path Sum II | LeetCode OJ](https://oj.leetcode.com/problems/path-sum-ii/)

@@ -2,6 +2,7 @@
 title: Leetcode 笔记 116 - Populating Next Right Pointers in Each Node
 description: 是Populating Next Right Pointers in Each Node II的简化版本，主要简化在于给定的树是完整树，因此Populating Next Right Pointers in Each Node II的解法也完全适用于本题。
 keywords: Populating Next Right Pointers in Each Node
+categories: leetcode tree
 ---
 
 题目链接：[Populating Next Right Pointers in Each Node | LeetCode OJ](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node/)

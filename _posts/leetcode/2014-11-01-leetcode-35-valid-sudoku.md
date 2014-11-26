@@ -2,6 +2,7 @@
 title: Leetcode 笔记 35 - Valid Soduko
 description: 最简单直接的解法一般是遍历整张数独表格，遇到的每个元素，以此遍历所属行、所属列、所属粗线宫是否有与之重复的数字。但是这种算法中，每遍历到一个元素，都要进行额外的最多3*9个格子的遍历。
 keywords: Valid Soduko
+categories: leetcode hash-table
 ---
 
 题目链接：[Valid Sudoku | LeetCode OJ](https://oj.leetcode.com/problems/valid-sudoku/)

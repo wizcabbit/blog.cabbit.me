@@ -2,6 +2,7 @@
 title: Leetcode 笔记 110 - Balanced Binary Tree
 description: 深度优先遍历题目，只要在遍历时取得左右子树的深度，对比是否相差超过1就可以得出结果，需要考虑的技巧是怎么在发现不平衡之后，最迅速的返回结果，不做多余的计算。有可能出现的问题是先写一个Helper方法获得结点到最下层叶子结点的深度，然后在深度优先遍历中每次调用这个方法来对比深度。这是不必要的，获取深度本身就是用深度优先遍历实现的，一边遍历一边计算深度就OK。
 keywords: Balanced Binary Tree
+categories: leetcode tree
 ---
 
 题目链接：[Balanced Binary Tree | LeetCode OJ](https://oj.leetcode.com/problems/balanced-binary-tree/)

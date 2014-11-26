@@ -2,6 +2,7 @@
 title: Leetcode 笔记 98 - Validate Binary Search Tree
 description: 对于Binary Search Tree，每道题都需要认真确认题中的约定是否与自己的理解相符，比如大名鼎鼎的Cracking the Coding Interview中，对于二叉查找树的定义为“左子结点小于或等于当前结点”，本题中的描述为”左子结点小于当前结点“。
 keywords: Validate Binary Search Tree
+categories: leetcode tree
 ---
 
 题目链接：[Validate Binary Search Tree | LeetCode OJ](https://oj.leetcode.com/problems/validate-binary-search-tree/)

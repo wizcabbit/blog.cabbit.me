@@ -23,6 +23,20 @@
   overflow: auto;
   padding-bottom: 5px;
 }
+.post-more .post-category {
+  float: left;
+  color: #b3b3b1;
+}
+.post-more .post-category a::first-letter {
+  display: block;
+  text-transform: uppercase;
+}
+.post-more .post-category a::after {
+  content: ',';
+}
+.post-more .post-category a:last-child::after {
+  content: '';
+}
 .post-more .post-date {
   float: right;
   color: #b3b3b1;

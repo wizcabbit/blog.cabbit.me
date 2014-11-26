@@ -2,6 +2,7 @@
 title: Leetcode 笔记 117 - Populating Next Right Pointers in Each Node II
 description: 本题的一个难点在于要求使用常数空间，这样的话普通的深度优先遍历由于需要递归压栈而无法使用，普通的广度优先搜索需要使用队列也无法使用，因此选择使用两层迭代，使用current指向当前结点的方法进行广度优先遍历。
 keywords: Populating Next Right Pointers in Each Node II
+categories: leetcode tree
 ---
 
 题目链接：[Populating Next Right Pointers in Each Node II | LeetCode OJ](https://oj.leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)

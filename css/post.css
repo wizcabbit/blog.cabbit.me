@@ -13,6 +13,9 @@
 .post-date {
   color: #b3b3b1;
 }
+.post {
+  border-bottom: solid #dededc 1px;
+}
 .post a{
   color: #007998;
   text-decoration: none;
@@ -35,6 +38,12 @@
 }
 .post pre code .comment {
   font-size: .9em;
+}
+.post pre {
+  line-height: 1.2em;
+}
+#comments {
+  margin-top: 10px;
 }
 @media screen and (max-width: 400px) {
   .post-title {
