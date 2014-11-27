@@ -28,6 +28,9 @@
 .post a:hover {
   color: rgba(0, 121, 152, 0.5);
 }
+.post img {
+  max-width: 100%;
+}
 .post ul {
   list-style: disc;
 }

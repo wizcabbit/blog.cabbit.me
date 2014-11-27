@@ -11,10 +11,14 @@ author_info: <a href="http://blog.cabbit.me/">wizcabbit</a>
 defaults:
   -
     scope:
-      path: "leetcode"
       type: "posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: "leetcode"
+      type: "posts"
+    values:
       categories: "leetcode"
 
-exclude: ["node_modules", "css", "js", "package.json", "Gruntfile.js", ".gitignore", "README.md"]
+exclude: ["node_modules",  "package.json", "Gruntfile.js", ".gitignore", "README.md"]
