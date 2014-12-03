@@ -27,9 +27,8 @@
   float: left;
   color: #b3b3b1;
 }
-.post-more .post-category a::first-letter {
-  display: block;
-  text-transform: uppercase;
+.post-more .post-category a {
+  text-transform: capitalize;
 }
 .post-more .post-category a::after {
   content: ',';
