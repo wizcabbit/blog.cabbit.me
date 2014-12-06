@@ -5,6 +5,8 @@ keywords: sublime,插件,前端,配色,javascript next,scss,solarized
 categories: tool sublime
 ---
 
+![ninjas onsublime text]({{site.url}}/images/2014-11-27/ninjas-on-sublime-text-logo.jpg)
+
 原文地址：[http://css-tricks.com/sublime-text-front-end-developers/](http://css-tricks.com/sublime-text-front-end-developers/)
 
 Sublime Text算是前端开发中最常使用的文本编辑器之一，对于前端工程师来说熟悉手中的编辑器就像熟悉筷子一样重要。Sublime Text的入门文章网上已经太多了，本文只关注能提升前端工程师工作效率的技巧和插件。
@@ -103,3 +105,5 @@ Sublime Text有无数有趣又有用的插件，社区的支持也是我一直�
 Goto Anything不光支持文件名，事实上他还支持前往某行，你可以使用“jquery.js:205:15”来前往jquery.js文件的205行15列。使用“@”可以前往文件里的函数、方法等等成员，再方便不过。
 
 ![goto anything]({{site.url}}/images/2014-11-27/goto.jpg)
+
++ 题图来源：[http://marcelkalveram.com/2013/11/10-shortcuts-to-become-a-true-sublime-text-ninja/](http://marcelkalveram.com/2013/11/10-shortcuts-to-become-a-true-sublime-text-ninja/)

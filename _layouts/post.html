@@ -25,8 +25,8 @@ layout: default
 </div>
 <script type="text/javascript">
 (function() {
-  $(".python").each(function() {
-    $(this).attr("class", "language-python");
+  $("code").each(function() {
+    $(this).attr("class", "language-" + $(this).attr("class"));
   });
 })();
 </script>

@@ -31,9 +31,6 @@
 .post img {
   max-width: 100%;
 }
-.post ul {
-  list-style: disc;
-}
 /* Modify prism's default code style */
 .post pre[class*='language-'] > code[data-language] {
   max-height: initial;
@@ -44,6 +41,10 @@
 }
 .post pre {
   line-height: 1.2em;
+}
+.post ul ul {
+  margin-bottom: 10px;
+  font-size: 1em;
 }
 #comments {
   margin-top: 10px;
