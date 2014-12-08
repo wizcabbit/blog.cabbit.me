@@ -16,7 +16,7 @@
 .post {
   border-bottom: solid #dededc 1px;
 }
-.post a{
+.post a {
   color: #007998;
   text-decoration: none;
   -moz-transition: color 0.25s ease-in-out;
@@ -32,9 +32,10 @@
   max-width: 100%;
 }
 /* Modify prism's default code style */
+
 .post pre[class*='language-'] > code[data-language] {
-  max-height: initial;
   line-height: 1.3em;
+  max-height: initial;
 }
 .post pre code .comment {
   font-size: .9em;
@@ -43,8 +44,28 @@
   line-height: 1.2em;
 }
 .post ul ul {
-  margin-bottom: 10px;
   font-size: 1em;
+  margin-bottom: 10px;
+}
+.post table {
+  display: block;
+  font-size: .9em;
+  overflow: auto;
+  width: 100%;
+}
+.post table th {
+  font-weight: bold;
+}
+.post table th, .post table td {
+  border: 1px solid #ddd;
+  padding: 6px 13px;
+}
+.post table tr {
+  background-color: #ffffff;
+  border-top: 1px solid #ccc;
+}
+.post table tr:nth-child(2n) {
+  background-color: #f8f8f8;
 }
 #comments {
   margin-top: 10px;

@@ -1,13 +1,13 @@
 ---
-title: Web图片优化
-description: 图片内容已经占到了互联网内容总量的62%，也就是说超过一半的流量和时间都用来下载图片。从性能优化的角度看，图片也绝对是优化的热点和重点之一，Google PageSpeed或者Yahoo的14条性能优化规则无不把图片优化作为重要的优化手段，本文覆盖了Web图片优化的方方面面，从基本的图片格式选择、到尚未被广泛支持的响应式图片均有所提及。
+title: Web性能优化：图片优化
+description: 互联网上超过一半的流量和时间都用来下载图片。图片优化是Web性能重要的优化手段，本文覆盖了Web图片优化的方方面面，从基本的图片格式选择、到尚未被广泛支持的响应式图片均有所提及。
 keywords: 图片优化,web,jpg,png,gif,压缩,apng
 categories: front-end
 ---
 
 ![web image optimization]({{site.url}}/images/2014-12-02/title.jpg)
 
-HTTP Archieve有个统计，图片内容已经占到了互联网内容总量的62%，也就是说超过一半的流量和时间都用来下载图片。从性能优化的角度看，图片也绝对是优化的热点和重点之一，Google PageSpeed或者Yahoo的14条性能优化规则无不把图片优化作为重要的优化手段，本文覆盖了Web图片优化的方方面面，从基本的图片格式选择、到尚未被广泛支持的响应式图片均有所提及。
+[HTTP Archieve](http://httparchive.org/interesting.php#bytesperpage)有个统计，图片内容已经占到了互联网内容总量的62%，也就是说超过一半的流量和时间都用来下载图片。从性能优化的角度看，图片也绝对是优化的热点和重点之一，Google PageSpeed或者Yahoo的14条性能优化规则无不把图片优化作为重要的优化手段，本文覆盖了Web图片优化的方方面面，从基本的图片格式选择、到尚未被广泛支持的响应式图片均有所提及。
 
 Google Web Fundamentals的说法我很喜欢：
 
@@ -19,7 +19,7 @@ Google Web Fundamentals的说法我很喜欢：
 
 要实现需要的效果，真的需要图片吗？这是首先要问自己的问题。浏览器和Web标准的发展速度极快，记得数年前我在用微软Silverlight 1.0写视频播放器的时候，中文还不能使用自定义字体显示，所以那时候写了很多糟糕的代码把需要的文字在服务器上生成图片并缓存起来。用户下载起来很慢，搜索引擎也完全无法检索这些文字。
 
-但是现在不一样了，很多特效（渐变、阴影、圆角等等）都可以用纯粹的HTML、CSS、SVG等加以实现，实现这些效果少则寥寥数行代码，多则加载额外的库（一张普通的照片比[非常强大的效果库](http://daneden.github.io/animate.css/)也大了许多）。这些效果不但需要的空间很小，而且在多设备、多分辨率下都能很好的工作，在低级浏览器上也可以实现较好的功能降级。因此在存在备选技术的情况下，应该首先选择这些技术，只有在不得不用使用图片的时候才加入真正的图片。
+但是现在不一样了，很多特效（渐变、阴影、圆角等等）都可以用纯粹的HTML、CSS、SVG等加以实现，实现这些效果少则寥寥数行代码，多则加载额外的库（一张普通的照片比[非常强大的效果库](http://daneden.github.io/animate.css/)也大了许多）。这些效果不但需要的空间很小，而且在多设备、多分辨率下都能很好的工作，在低级浏览器上也可以实现较好的功能降级。因此在存在备选技术的情况下，应该首先选择这些技术，只有在不得不使用图片的时候才加入真正的图片。
 
 ### 备选技术
 
@@ -37,19 +37,19 @@ Google Web Fundamentals的说法我很喜欢：
 |JPEG|有损压缩|不支持|不支持|所有|复杂颜色及形状、尤其是照片|
 |GIF|无损压缩|支持|支持|所有|简单颜色，动画|
 |PNG|无损压缩|支持|不支持|所有|需要透明时|
-|APNG|无损压缩|支持|支持|仅Firefox、Safari及iOS Safari支持|需要半透明效果的动画|
-|WebP|有损压缩|支持|支持|仅Chrome、Opera、Android Chrome及Android Browser支持|复杂颜色及形状，浏览器平台可预知|
-|SVG|无损压缩|支持|支持|所有（IE8+）|简单图形，需要良好的放缩体验，需要动态控制图片特效|
+|APNG|无损压缩|支持|支持|Firefox<br>Safari<br>iOS Safari|需要半透明效果的动画|
+|WebP|有损压缩|支持|支持|Chrome<br>Opera<br>Android Chrome<br>Android Browser|复杂颜色及形状<br>浏览器平台可预知|
+|SVG|无损压缩|支持|支持|所有（IE8以上）|简单图形，需要良好的放缩体验<br>需要动态控制图片特效|
 
 其中APNG和WebP格式出现的较晚，[尚未被Web标准所采纳](http://caniuse.com/#search=apng)，只有在特定平台或浏览器环境可以预知的情况下加以采用，虽然均可以在不支持的环境中较好的功能降级，但本节暂不讨论这两种格式。图片格式选择过程如下：
 
-![image optim]({{site.url}}/images/2014-12-02/step.png)
+![image optim]({{site.url}}/images/2014-12-02/step.jpg)
 
 
 #### 颜色丰富的照片，JPG是通用的选择
 * 人眼的结构很适合查看JPG压缩后的照片，可以充分的忽略并在脑中补齐细节
 * JPG在压缩率不高时保留的细节还是不错的
-* WebP能够比JPG减少30%的体积，但目前兼容性较差
+* WebP能够比JPG减少30%的体积，但目前[兼容性较差](http://caniuse.com/#search=webp)
 
 #### 如果需要较通用的动画，GIF是唯一可用的选择
 * GIF支持的颜色范围为256色，而且仅支持完全透明/完全不透明
@@ -74,7 +74,7 @@ Google Web Fundamentals的说法我很喜欢：
 
 ![kraken]({{site.url}}/images/2014-12-02/pixel.png)
 
-我们能够控制的地方是“恰好”显示所需尺寸的图片。例如在屏幕中通过CSS或者<img>标签的wihth/height属性，将一副200x200的图片调整为100x100大小，那么这其中就有（200x200）-(100x100)=30000个像素是浪费的，这占到了图片尺寸的75%！
+我们能够控制的地方是“恰好”显示所需尺寸的图片。例如在屏幕中通过CSS或者<img>标签的wihth/height属性，将一副200x200的图片调整为100x100大小，那么这其中就有(200x200)-(100x100)=30000个像素是浪费的，这占到了图片尺寸的75%！
 
 之所以有这么大的浪费，是因为图片的尺寸与面积基本成正比，与宽高的平方成正比。因此良好的计算客户端实际显示的图片尺寸，能够大大减小图片的大小。即使只有长和宽都只有10px被浪费，但是当图片足够大时，这部分也将产生很大影响。
 
@@ -92,8 +92,8 @@ Google Web Fundamentals的说法我很喜欢：
 
 选择了正确的图片格式，按照正确的大小生成了图片后，我们还需要对图片进行进一步优化，这种优化一般分两步进行：
 
-1. “有损”优化，删除没有出现或极少出现过的颜色，合并相邻的相近颜色。这一步并不必须，如PNG格式就直接进入下一步
-2. “无损”优化，压缩数据，删除不必要的信息
+1. 有损优化，删除没有出现或极少出现过的颜色，合并相邻的相近颜色。这一步并不必须，如PNG格式就直接进入下一步
+2. 无损优化，压缩数据，删除不必要的信息
 
 JPG和PNG格式的图片生成后，一般还有进一步优化的空间，例如JPG格式的照片中，可能携带有相机的Exif信息，PNG格式的图片中可能带有Fireworks等软件的图层信息等。去除这些额外信息后，还可以通过减小图片的调色板，去除没有出现过的颜色，以及合并相邻的相同颜色等手段来进行优化。原理性的内容这里不再赘述，仅介绍工程中可用的优化工具。
 
@@ -106,7 +106,7 @@ JPG和PNG格式的图片生成后，一般还有进一步优化的空间，例�
 |[AdvPNG](http://advancemame.sourceforge.net/doc-advpng.html)|无损PNG优化|
 |[PNGQuant](http://pngquant.org/)|有损PNG优化|
 
-如果你真的需要追求各种图片的极限压缩，可以参阅这些工具的文档，但是对于一般的Web应用，面对的图片种类多样，几乎不可能在工程中实现对每种工具的独立配置，因此推荐使用以下工具来进行优化。这些工具往往使用了上表中的一种或几种优化工具
+如果你真的需要追求各种图片的极限压缩，可以参阅这些工具的文档，但是对于一般的Web应用，面对的图片种类多样，几乎不可能在工程中实现对每种工具的独立配置，因此推荐使用以下工具来进行优化。这些工具往往使用了上表中的一种或几种优化工具。
 
 ### ImageOptim (Mac)
 
@@ -130,7 +130,7 @@ Mac平台下非常赞的图片优化工具，只需要把需要优化的图片�
 
 腾讯ISUX团队有篇文章介绍智图：[http://isux.tencent.com/zhitu.html](http://isux.tencent.com/zhitu.html)
 
-国货当自强，腾讯的智图工具推出不久，但实测效果很好，而且提供了[Gulp的自动化支持](https://www.npmjs.org/package/gulp-imageisux)，这部分会在后面自动优化章节介绍。只想建议一句，Kraken的首页比智图美好几百倍…… 而且用压缩前的PNG和压缩后的JPG比，真的没关系么~
+国货当自强，腾讯的智图工具推出不久，但实测效果很好，而且提供了[Gulp的自动化支持](https://www.npmjs.org/package/gulp-imageisux)，这部分会在后面自动优化章节介绍。只想建议一句，Kraken的首页比智图美好几百倍…… 而且把压缩前的PNG和压缩后的JPG放在一起对比大小，真的没关系么~
 
 ![kraken]({{site.url}}/images/2014-12-02/zhitu.png)
 
@@ -157,7 +157,7 @@ AddOutputFilterByType DEFLATE image/svg+xml
 
 GIF有很多好处，在颜色数较低的时候能够大幅减小图片体积，而且他也是唯一能够较为通用的展示动画的图片格式。关于GIF格式的优化原理我并不熟悉，只是在工程中直接使用成型的压缩工具，在后文[自动优化](#auto)章节的Grunt中，会介绍通过Grunt Task进行自动优化的方法。
 
-关于APNG，目前浏览器对他的支持还不够好，但是在可以支持HTML5的场景中，有成熟的开源工具[apng-canvas](https://github.com/davidmz/apng-canvas)可以用于支持APNG。
+关于APNG，目前浏览器对他的支持还不够好，不过在支持HTML5的场景中，有成熟的开源工具[apng-canvas](https://github.com/davidmz/apng-canvas)可以用于支持APNG。
 
 ![kraken]({{site.url}}/images/2014-12-02/apng.gif)
 
@@ -169,15 +169,15 @@ GIF有很多好处，在颜色数较低的时候能够大幅减小图片体积�
 
 ### 自动优化：CDN
 
-使用CDN对图片自动进行优化，我在国外的CDN提供商处很少见到这类服务，倒是国内的两大新秀CDN[七牛](http://www.qiniu.com/)和[又拍](https://www.upyun.com/index.html)对其都做了大量工作。其工作方式为，向CDN请求图片的URL请求中包含了需要处理的图片信息，CDN服务器根据请求生成所需的图片，发送到用户浏览器。
+使用CDN对图片自动进行优化，我在国外的CDN提供商处很少见到这类服务，倒是国内的两大新秀CDN[七牛](http://www.qiniu.com/)和[又拍](https://www.upyun.com/index.html)在这方面都做了大量工作。其工作方式为，向CDN请求图片的URL参数中包含了图片处理的参数（格式、宽高等），CDN服务器根据请求生成所需的图片，发送到用户浏览器。
 
-七牛CDN的[图片处理接口](http://developer.qiniu.com/docs/v6/api/reference/fop/image/)极其丰富，覆盖了图片的大部分基本操作，例如：
+七牛云存储的[图片处理接口](http://developer.qiniu.com/docs/v6/api/reference/fop/image/)极其丰富，覆盖了图片的大部分基本操作，例如：
 
 + 图片裁剪，支持多种裁剪方式（如按长边、短边、填充、拉伸等）
 + 图片格式转换，支持JPG, GIF, PNG, WebP等，支持不同的图片压缩率
 + 图片处理，支持图片水印、高斯模糊、重心处理等
 
-七牛CDN的图片处理接口使用并不复杂，例如下面这张原图：
+七牛云存储的图片处理接口使用并不复杂，例如下面这张原图：
 
 ![]({{site.url}}/images/2014-12-02/gogopher.jpg)
 
@@ -193,7 +193,7 @@ http://qiniuphotos.qiniudn.com/gogopher.jpg?imageView2/1/w/200/h/200
 
 这里介绍用于图片优化的Grunt组件：[grunt-image](https://github.com/1000ch/grunt-image)。前端工程师的重复性工作，例如合并静态资源、压缩JS和CSS文件、编译SASS等都可以使用Grunt等自动化工具批量完成，图片优化也是如此。
 
-grunt-image非常强，按照作者的介绍，其内部加载的图片优化工具包括了pngquant, optipng, advpng, zopflipng, pngcrush, pngout, mozjpeg, jpegRecompress, jpegoptim, gifsicle和svgo。支持批量自动优化PNG, JPG, SVG和GIF，速度也不错，配置方式也支持但图片优化和全目录优化：
+grunt-image非常强大，按照作者的介绍，其内部加载的图片优化工具包括了pngquant, optipng, advpng, zopflipng, pngcrush, pngout, mozjpeg, jpegRecompress, jpegoptim, gifsicle和svgo。支持批量自动优化PNG, JPG, SVG和GIF，速度也不错，配置方式支持单图片优化和全目录优化：
 
 ```javascript
 module.exports = function (grunt) {
@@ -241,7 +241,7 @@ module.exports = function (grunt) {
 
 ### 自动优化：Google PageSpeed
 
-Google做事风格比较彻底，看见哪个软件不好用就拿来直接fork出新版本或者干脆重写，对于Web优化，Google发布了了[Google PageSpeed](https://developers.google.com/speed/pagespeed/module)这个服务器模块，可以在apache或ngnix中加载，通过在服务器配置文件中进行设置来进行自动化的优化。对于图片格式转换、图片优化甚至图片LazyLoad都有相关选项。这部分展开会非常长，请感兴趣的同学参考Google开发手册。
+Google做事风格比较彻底，看见哪个软件不好用就拿来直接fork出新版本或者干脆重写，对于Web优化，Google发布了了[Google PageSpeed](https://developers.google.com/speed/pagespeed/module)这个服务器模块，可以在apache或ngnix中加载，通过在服务器配置文件中进行设置来进行自动化的优化。对于图片格式转换、图片优化甚至图片LazyLoad都有相关选项。这部分展开会非常长，请感兴趣的同学参考Google的手册。
 
 ## 参考链接
 
