@@ -38,7 +38,7 @@ After calling your function, the tree should look like:
 
         1 -> NULL
        /  \
-      2 -> 3 -> NULLkj
+      2 -> 3 -> NULL
      / \  / \
     4->5->6->7 -> NULL
 
