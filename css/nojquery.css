@@ -1,84 +1,86 @@
-.post-title {
-  font-size: 2em;
-  line-height: 1.6em;
-  margin-top: 5px;
-  padding-bottom: 0.4em;
+* {
+  box-sizing: border-box;
 }
-.post-subtitle {
-  color: #999;
-  font-size: 1.4em;
-  font-weight: normal;
-  line-height: 2em;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-.post-date {
-  color: #b3b3b1;
+html:lang(zh) {
+  -webkit-font-smoothing: antialiased;
 }
-.post {
-  border-bottom: solid #dededc 1px;
+body {
+  margin: 0;
 }
-.post a, #rights a {
-  color: #007998;
+a {
+  color: black;
   text-decoration: none;
-  -moz-transition: color 0.25s ease-in-out;
-  -ms-transition: color 0.25s ease-in-out;
-  -o-transition: color 0.25s ease-in-out;
-  -webkit-transition: color 0.25s ease-in-out;
-  transition: color 0.25s ease-in-out;
+  cursor: pointer;
 }
-.post a:hover, #rights a:hover {
-  color: rgba(0, 121, 152, 0.5);
+a:hover, a:active {
+  color: #4183C4;
 }
-.post img {
-  max-width: 100%;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  font-weight: bold;
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
 }
-/* Modify prism's default code style */
-
-.post pre[class*='language-'] > code[data-language] {
-  line-height: 1.3em;
-  max-height: initial;
+#title-wrapper {
+  margin-bottom: 50px;
 }
-.post pre code .comment {
-  font-size: .9em;
-}
-.post pre {
-  line-height: 1.2em;
-}
-.post ul ul {
-  font-size: 1em;
-  margin-bottom: 10px;
-}
-.post table {
-  display: block;
-  font-size: .9em;
-  overflow: auto;
+#title-container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
   width: 100%;
 }
-.post table th {
-  font-weight: bold;
+header {
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  overflow: auto;
 }
-.post table th, .post table td {
-  border: 1px solid #ddd;
-  padding: 6px 13px;
+#title-icon {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+  font-size: 100%;
 }
-.post table tr {
-  background-color: #ffffff;
-  border-top: 1px solid #ccc;
+#title-content {
+  float: left;
 }
-.post table tr:nth-child(2n) {
-  background-color: #f8f8f8;
+#title-content h1 {
+  margin: 0;
+  color: #333;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
 }
-#rights {
-  border-bottom: solid #dededc 1px;
-  font-size: 14px;
+#title-content p {
+  margin: -5px 0 0 0;
+  color: #666;
+  font-size: 16px;
+  line-height: 22px;
 }
-#comments {
-  margin-top: 10px;
+nav {
+  float: right;
+  margin-top: 23px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
 }
-@media screen and (max-width: 400px) {
-  .post-title {
-    font-size: 1.4em;
-  }
-  .post h2 {
-    font-size: 1.2em;
-  }
+nav a {
+  margin-left: 20px;
+  color: #333;
+  text-align: right;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
