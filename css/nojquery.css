@@ -2,23 +2,30 @@
   box-sizing: border-box;
 }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
 body {
+  color: #333333;
+  font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Hiragino Sans GB', 'Microsoft YaHei', "微软雅黑", STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+  font-weight: 400;
   margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
 }
 a {
   color: black;
   text-decoration: none;
-  cursor: pointer;
+  -moz-transition: color 0.25s ease-in-out;
+  -ms-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  -webkit-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 a:hover, a:active {
-  color: #4183C4;
+  color: #007998;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -27,8 +34,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 15px;
   padding: 0;
 }
-h2 {
-  font-size: 30px;
+p {
+  font-size: 14px;
+  line-height: 2em;
 }
 #title-wrapper {
   margin-bottom: 50px;
@@ -57,7 +65,6 @@ header {
 }
 #title-content h1 {
   margin: 0;
-  color: #333;
   cursor: pointer;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -65,14 +72,13 @@ header {
   letter-spacing: 1px;
 }
 #title-content p {
-  margin: -5px 0 0 0;
   color: #666;
+  line-height: 2em;
   font-size: 16px;
-  line-height: 22px;
+  margin: 0;
 }
 nav {
   float: right;
-  margin-top: 23px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 25px;
@@ -82,7 +88,7 @@ nav a {
   color: #333;
   text-align: right;
   font-weight: 300;
-  letter-spacing: 1px;
+  font-size: 16px letter-spacing: 1px;
 }
 #main-wrapper {
   margin: 0 auto;
@@ -94,13 +100,48 @@ nav a {
   padding-bottom: 2em;
   border-bottom: 1px solid #eee;
 }
-.post-brief p {
+#main-wrapper .post-brief p {
   margin: 15px 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 25px;
 }
 .post-full-link {
   text-transform: uppercase;
   font-size: 15px;
   color: #4183C4;
+}
+#main-wrapper p {
+  line-height: 25px;
+}
+#main-wrapper h2 {
+  font-size: 26px;
+  margin: 12px 0 0 0;
+}
+#main-wrapper h3 {
+  font-size: 22px;
+  margin: 12px 0 0 0;
+}
+#main-wrapper li {
+  font-size: 14px;
+  line-height: 25px;
+}
+#main-wrapper em {
+  font-style: italic;
+  padding-left: 15px;
+  display: block;
+  border: 0 #efefef solid;
+  border-left-width: 5px;
+}
+#main-wrapper blockquote {
+  padding: 10px 10px 10px 15px;
+  margin: 0;
+  background: #efefef;
+  border-radius: 4px;
+  color: #333;
+}
+#main-wrapper a {
+  color: #007998;
+}
+#main-wrapper a:hover, #main-wrapper a:active {
+  color: rgba(0, 121, 152, 0.5);
 }

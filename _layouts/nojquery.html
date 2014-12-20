@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>{% if page.title %}{{ page.title }}{% endif %} {{ site.title }}</title>
+  <title>{% if page.title %}{{ page.title }}{% endif %}</title>
   <meta name="author" content="wizcabbit">
   <meta name="keywords" content="wizcabbit,Wang Zhi Yong,blog,{% if page.keywords %}{{ page.keywords }}{% endif %}">
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}WANG Zhi Yong，全栈码农（Web），伪咨询顾问。{% endif %}">
@@ -18,9 +18,7 @@
   <link rel="dns-prefetch" href="//blogcabbitme.disqus.com">
   {% if site.is_debug %}
   <link rel="stylesheet" href="{{ site.url }}/css/nojquery.css">
-  <link rel="stylesheet" href="{{ site.url }}/lib/Han/han.min.css">
   <script type="text/javascript" src="{{ site.url }}/lib/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="{{ site.url }}/lib/Han/han.min.js"></script>
   {% else %}
   <link rel="stylesheet" href="{{ site.url }}/all.min.css">
   <script type="text/javascript" src="{{ site.url }}/all.min.js"></script>
@@ -49,12 +47,13 @@
           <img src="{{ site.url }}/images/2014-12-18-nojquery/logo.png" />
         </a>
         <div id="title-content">
-          <a href="{{ site.url }}/you-dont-need-jquery/"><h1>You Don't Need jQuery!</h1></a>
-          <p>Free yourself from the chains of jQuery by embracing and understanding the modern Web API and discovering various directed libraries to help you fill in the gaps.</p>
+          <a href="{{ site.url }}/you-dont-need-jquery/"><h1>你不再需要jQuery！</h1></a>
+          <p>理解jQuery背后的工作原理，探索掌握现代浏览器API，把Web开发新手从jQuery的陷阱中拯救出来，更好地完成Web开发。</p>
         </div>
         <nav>
-          <a href="/you-dont-need-jquery/">Blog</a>
-          <a href="/you-dont-need-jquery/about">About</a>
+          <a href="//blog.garstasio.com/you-dont-need-jquery/">作者Blog</a>
+          <a href="//blog.garstasio.com/you-dont-need-jquery/about/">关于作者</a>
+          <a href="//blog.cabbit.me">中文译者</a>
         </nav>
       </header>
     </div>
