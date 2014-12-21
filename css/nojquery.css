@@ -101,7 +101,7 @@ nav a {
   padding-bottom: 2em;
 }
 #main-wrapper .post-brief p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 25px;
   margin: 15px 0;
 }
@@ -139,11 +139,29 @@ nav a {
   margin: 0;
   padding: 10px 10px 10px 15px;
 }
-#main-wrapper a {
+#main-wrapper a, #footer-wrapper a {
   color: #007998;
 }
-#main-wrapper a:hover, #main-wrapper a:active {
+#main-wrapper a:hover, #main-wrapper a:active, #footer-wrapper a:hover, #footer-wrapper a:active {
   color: rgba(0, 121, 152, 0.5);
+}
+#footer-wrapper {
+  background-color: #eee;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+#comments div[dir=ltr] {
+  margin-top: 20px;
+}
+footer {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
 }
 .highlight {
   background-color: #efefef;
