@@ -1,5 +1,6 @@
 markdown: rdiscount
 permalink: /:title
+pygments: true
 
 title: "@wizcabbit"
 
