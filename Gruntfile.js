@@ -25,6 +25,9 @@ module.exports = function(grunt) {
             'css/post.css',
             'lib/Han/han.min.css',
             'lib/prism/prism.css'
+          ],
+          '_site/nojquery.min.css': [
+            'css/nojquery.css'
           ]
         }
       }
