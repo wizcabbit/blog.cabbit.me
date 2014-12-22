@@ -139,6 +139,9 @@ nav a {
   margin: 0;
   padding: 10px 10px 10px 15px;
 }
+#main-wrapper blockquote p {
+  margin: 5px;
+}
 #main-wrapper a, #footer-wrapper a {
   color: #007998;
 }
