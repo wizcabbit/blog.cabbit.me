@@ -38,6 +38,9 @@ p {
   font-size: 14px;
   line-height: 2em;
 }
+strong {
+  font-weight: bold;
+}
 #title-wrapper {
   margin-bottom: 30px;
 }
