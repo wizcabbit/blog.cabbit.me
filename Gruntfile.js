@@ -52,7 +52,8 @@ module.exports = function(grunt) {
           authKey: 'www'
         },
         src: './_site',
-        dest: './blog'
+        dest: './blog',
+        exclusions: ['/**/.DS_Store', '/**/npm-debug.log']
       }
     }
   });
