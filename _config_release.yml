@@ -1,10 +1,15 @@
 markdown: rdiscount
 permalink: /:title
+highlighter: pygments
 
 title: "@wizcabbit"
 
 url: http://blog.cabbit.me
 is_debug: false
+
+author:
+  name: wizcabbit
+  email: frontfreewzy@gmail.com
 
 author_info: <a href="http://blog.cabbit.me/">wizcabbit</a>
 

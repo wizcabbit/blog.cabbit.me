@@ -25,6 +25,9 @@ module.exports = function(grunt) {
             'css/post.css',
             'lib/Han/han.min.css',
             'lib/prism/prism.css'
+          ],
+          '_site/nojquery.min.css': [
+            'css/nojquery.css'
           ]
         }
       }
@@ -49,7 +52,8 @@ module.exports = function(grunt) {
           authKey: 'www'
         },
         src: './_site',
-        dest: './blog'
+        dest: './blog',
+        exclusions: ['/**/.DS_Store', '/**/npm-debug.log']
       }
     }
   });

@@ -3,3 +3,4 @@ _site/
 node_modules/
 .ftppass
 .grunt
+npm-debug.log

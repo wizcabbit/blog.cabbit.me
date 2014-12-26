@@ -16,7 +16,7 @@
 .post {
   border-bottom: solid #dededc 1px;
 }
-.post a {
+.post a, #rights a {
   color: #007998;
   text-decoration: none;
   -moz-transition: color 0.25s ease-in-out;
@@ -25,7 +25,7 @@
   -webkit-transition: color 0.25s ease-in-out;
   transition: color 0.25s ease-in-out;
 }
-.post a:hover {
+.post a:hover, #rights a:hover {
   color: rgba(0, 121, 152, 0.5);
 }
 .post img {
@@ -66,6 +66,10 @@
 }
 .post table tr:nth-child(2n) {
   background-color: #f8f8f8;
+}
+#rights {
+  border-bottom: solid #dededc 1px;
+  font-size: 14px;
 }
 #comments {
   margin-top: 10px;
