@@ -169,6 +169,14 @@ footer {
   width: 100%;
   font-size: 14px;
 }
+code {
+  font-family: 'Bitstream Vera Sans Mono', 'Courier', monospace;
+}
+p code {
+  background-color: #efefef;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
 .highlight {
   background-color: #efefef;
   border: 1px solid #ddd;
@@ -177,9 +185,6 @@ footer {
   margin: 0;
   overflow: scroll;
   padding: 5px 5px 5px 15px;
-}
-.highlight code {
-  font-family: 'Bitstream Vera Sans Mono', 'Courier', monospace;
 }
 .highlight pre {
   margin: 10px 0;

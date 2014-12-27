@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    ftpush: {
+    'ftp-deploy': {
       deploy: {
         auth: {
           host: 'srv.cabbit.me',
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
         },
         src: './_site',
         dest: './blog',
-        exclusions: ['/**/.DS_Store', '/**/npm-debug.log']
+        exclusions: ['./**/.DS_Store', './**/.npm-debug.log']
       }
     }
   });
@@ -62,10 +62,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-jekyll');
-  grunt.loadNpmTasks('grunt-ftpush');
+  grunt.loadNpmTasks('grunt-ftp-deploy');
 
   grunt.registerTask('default', ['jekyll:test']);
   grunt.registerTask('test', ['jekyll:test']);
   grunt.registerTask('release', ['clean:release', 'jekyll:release', 'uglify:release', 'cssmin:release']);
-  grunt.registerTask('deploy', ['release', 'ftpush:deploy']);
+  grunt.registerTask('deploy', ['release', 'ftp-deploy:deploy']);
 };
